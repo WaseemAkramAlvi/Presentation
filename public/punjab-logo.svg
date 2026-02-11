@@ -1,0 +1,6 @@
+<!-- Placeholder for Punjab Government Logo -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="100" r="90" fill="white" stroke="#0B5D3B" stroke-width="4"/>
+  <text x="100" y="90" font-family="Arial" font-size="20" fill="#0B5D3B" text-anchor="middle" dominant-baseline="middle" font-weight="bold">PUNJAB</text>
+  <text x="100" y="115" font-family="Arial" font-size="14" fill="#0B5D3B" text-anchor="middle" dominant-baseline="middle">GOVERNMENT</text>
+</svg>
