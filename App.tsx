@@ -1291,6 +1291,28 @@ const App: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Navigation Buttons */}
+      <div className="fixed bottom-12 right-12 flex gap-4 no-print z-50">
+        <button
+          onClick={() => currentSlide > 1 && scrollToSlide(currentSlide - 1)}
+          disabled={currentSlide === 1}
+          className="px-6 py-3 bg-[#0B5D3B] text-white rounded-lg shadow-2xl border border-gray-100 hover:bg-[#0a4d30] transition-all disabled:opacity-30 disabled:cursor-not-allowed font-bold text-sm"
+        >
+          ← Back
+        </button>
+        <button
+          onClick={() => currentSlide < 15 && scrollToSlide(currentSlide + 1)}
+          disabled={currentSlide === 15}
+          className="px-6 py-3 bg-[#0B5D3B] text-white rounded-lg shadow-2xl border border-gray-100 hover:bg-[#0a4d30] transition-all disabled:opacity-30 disabled:cursor-not-allowed font-bold text-sm"
+        >
+          Next →
+        </button>
+      </div>
+
+      <div className="fixed bottom-6 right-12 text-xs font-bold text-gray-500 uppercase tracking-widest no-print z-40">
+        Slide {currentSlide} of 15
+      </div>
     </div>
   );
 };
